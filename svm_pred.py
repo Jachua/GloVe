@@ -147,7 +147,7 @@ class Embedding(object):
         return pred
 
     def write_out(self, pred_label, f):
-        preds = np.zeros((len(pred_idx), 2))
+        preds = np.zeros((len(pred_label), 2))
         for idx, pred in enumerate(pred_label):
             preds[idx][0] = idx
             preds[idx][1] = pred
